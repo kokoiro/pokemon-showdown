@@ -18,6 +18,14 @@ The column value will be ignored for repeat sections.
 */
 
 export const Formats: import('../sim/dex-formats').FormatList = [
+	{
+		effectType: 'Rule',
+		name: 'No Preview',
+		desc: "Players cannot see each other's teams before battle",
+		onBegin() {
+			this.add('rule', 'No Team Preview');
+		},
+	},
 
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
@@ -31,7 +39,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		desc: "Formato exclusivo del torneo Boss Rush.",
 		ruleset: [
 			"Standard NatDex",        // ✅ Ya incluye: Species, OHKO, Evasion, Sleep Clause
-			"Picked Team Size = 6",   // ✅ Equipo de 6 Pokémon
+			"Picked Team Size = 6",   
 		],
 		banlist: [
 			"Uber", "AG",             // ✅ Legendarios y míticos
@@ -42,11 +50,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	
 	// Formato 1vs1 Se Vale Todo
 	///////////////////////////////////////////////////////////////////
-	
-	{
-		section: "Formatos Personalizados",
-		column: 2,
-	},
 	{
 		name: "1vs1 Se Vale Todo",
 		desc: "Batalla 1vs1 sin restricciones. ¡Todo está permitido!",
@@ -60,6 +63,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Obtainable', 
 			'OHKO Clause', 
 			'Evasion Moves Clause', 
+			"+No Preview", 
 		],
 		banlist: [
 			// Pokémon específicos muy rotos en 1vs1
@@ -75,5 +79,12 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			// Items problemáticos
 			'Quick Claw', 'Focus Band', 'Kings Rock', 'Razor Fang',
 		],
+		onBattleStart() {
+			this.add('message', '¡1vs1 Todo Vale! Los equipos están ocultos para los oponentes.');
+		},
+		onTeamPreview() {
+			this.add('message', 'Los equipos de los oponentes permanecen ocultos');
+			return false;
+		},
 	},
 ];
