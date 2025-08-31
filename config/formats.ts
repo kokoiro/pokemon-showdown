@@ -18,14 +18,6 @@ The column value will be ignored for repeat sections.
 */
 
 export const Formats: import('../sim/dex-formats').FormatList = [
-	{
-		effectType: 'Rule',
-		name: 'No Preview',
-		desc: "Players cannot see each other's teams before battle",
-		onBegin() {
-			this.add('rule', 'No Team Preview');
-		},
-	},
 
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
