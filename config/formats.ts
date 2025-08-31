@@ -55,7 +55,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Obtainable', 
 			'OHKO Clause', 
 			'Evasion Moves Clause', 
-			"+No Preview", 
 		],
 		banlist: [
 			// Pokémon específicos muy rotos en 1vs1
