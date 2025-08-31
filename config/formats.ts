@@ -49,12 +49,10 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3661297/">Formato 1vs1</a>`,
 		],
 		ruleset: [
-			'Team Preview', 
+			'Standard NatDex', 
 			'Picked Team Size = 1', 
 			'Max Team Size = 3',
 			'Obtainable', 
-			'OHKO Clause', 
-			'Evasion Moves Clause', 
 		],
 		banlist: [
 			// Pokémon específicos muy rotos en 1vs1
