@@ -71,11 +71,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Quick Claw', 'Focus Band', 'Kings Rock', 'Razor Fang',
 		],
 		onBattleStart() {
-			this.add('message', '¡1vs1 Todo Vale! Los equipos están ocultos para los oponentes.');
-		},
-		onTeamPreview() {
-			this.add('message', 'Los equipos de los oponentes permanecen ocultos');
-			return false;
+			this.add('message', '¡1vs1 Todo Vale!');
 		},
 	},
 ];
