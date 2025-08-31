@@ -52,7 +52,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Standard NatDex', 
 			'Picked Team Size = 1', 
 			'Max Team Size = 3',
-			'Obtainable', 
 		],
 		banlist: [
 			// Pokémon específicos muy rotos en 1vs1
