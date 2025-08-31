@@ -31,7 +31,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		desc: "Formato exclusivo del torneo Boss Rush.",
 		ruleset: [
 			"Standard NatDex",        // ✅ Ya incluye: Species, OHKO, Evasion, Sleep Clause
-			"Same Type Clause",       // ✅ Tu regla personalizada (monotype)
 			"Picked Team Size = 6",   // ✅ Equipo de 6 Pokémon
 		],
 		banlist: [
