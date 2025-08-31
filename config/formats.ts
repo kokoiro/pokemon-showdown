@@ -39,4 +39,41 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			"King's Rock", "Razor Fang", "Quick Claw", "Focus Band", "Scope Lens", // ✅ Items de suerte
 		],
 	},
+	
+	// Formato 1vs1 Se Vale Todo
+	///////////////////////////////////////////////////////////////////
+	
+	{
+		section: "Formatos Personalizados",
+		column: 2,
+	},
+	{
+		name: "1vs1 Se Vale Todo",
+		desc: "Batalla 1vs1 sin restricciones. ¡Todo está permitido!",
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3661297/">Formato 1vs1</a>`,
+		],
+		ruleset: [
+			'Team Preview', 
+			'Picked Team Size = 1', 
+			'Max Team Size = 3',
+			'Obtainable', 
+			'OHKO Clause', 
+			'Evasion Moves Clause', 
+		],
+		banlist: [
+			// Pokémon específicos muy rotos en 1vs1
+			'Arceus', 'Calyrex-Shadow', 'Dialga', 'Dialga-Origin', 'Eternatus', 'Giratina', 'Giratina-Origin',
+			'Groudon', 'Koraidon', 'Kyogre', 'Kyurem-White', 'Lugia', 'Lunala', 'Magearna', 'Mewtwo',
+			'Miraidon', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Palkia', 'Palkia-Origin', 'Rayquaza',
+			'Reshiram', 'Solgaleo', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned',
+			'Zekrom',
+			
+			// Movimientos/estrategias problemáticas
+			'Perish Song', 'Sing', 'Grass Whistle', 'Hypnosis', 'Lovely Kiss', 'Sleep Powder', 'Spore',
+			
+			// Items problemáticos
+			'Quick Claw', 'Focus Band', 'Kings Rock', 'Razor Fang',
+		],
+	},
 ];
